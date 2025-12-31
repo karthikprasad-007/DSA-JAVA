@@ -11,19 +11,15 @@ public class SelectionSort {
     }
 
     static void selectionSort(int[] arr) {
-        int n = arr.length - 1;
-        int k = 0;
-        for(int i = 0; i <= n; ++i) {
-            int max = arr[0];
-            for(int j = 0; j <= n - i - 1; ++j) {
-                if(arr[j] >= max) {
-                    k = j;
-                    max = arr[j];
-                }
+        int n = arr.length;
+        for(int i = 0; i < n; ++i) {
+            int max = 0;
+            for(int j = 1; j < n - i; ++j) {
+                if(arr[j] > arr[max]) max = j;
             }
-            int temp = arr[n-i];
-            arr[n-i] = max;
-            arr[k] = temp;
+            int temp = arr[n-i-1];
+            arr[n-i-1] = arr[max];
+            arr[max] = temp;
         }
     }
 }
