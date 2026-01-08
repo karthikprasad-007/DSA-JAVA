@@ -10,6 +10,8 @@ public class CyclicSort {
         System.out.println(Arrays.toString(arr));
     }
 
+    //O(1) time complexity
+    // Requires elements from 1 to n
     static void cyclicSort(int[] arr) {
         int i = 0;
         while(i < arr.length) {
