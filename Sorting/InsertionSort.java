@@ -10,6 +10,8 @@ public class InsertionSort {
         System.out.println(Arrays.toString(arr));
     }
 
+    //O(n^2) time complexity
+    // Stable sort
     static void insertionSort(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = i + 1; j > 0; --j) {
