@@ -10,6 +10,7 @@ public class SelectionSort {
         System.out.println(Arrays.toString(arr));
     }
 
+    //O(n^2) time complexity
     static void selectionSort(int[] arr) {
         int n = arr.length;
         for(int i = 0; i < n; ++i) {
