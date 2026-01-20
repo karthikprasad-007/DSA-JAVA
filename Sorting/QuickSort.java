@@ -10,6 +10,7 @@ public class QuickSort {
         }
     }
 
+    // Helper method to partition the array
     private static int partition(int[] arr, int low, int high) {
         int pivot = arr[high];
         int i = low - 1;
@@ -30,6 +31,7 @@ public class QuickSort {
         return i + 1;
     }
 
+    // Method to print the array
     private static void printArray(int[] arr) {
         for (int num : arr) {
             System.out.print(num + " ");
