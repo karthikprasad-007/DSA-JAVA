@@ -1,6 +1,7 @@
 package Sorting;
 
 public class QuickSort {
+    //Time Complexity: O(n log n) 
     public static void quickSort(int[] arr, int low, int high) {
         if (low < high) {
             int pi = partition(arr, low, high);
