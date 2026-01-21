@@ -2,6 +2,7 @@ package Sorting;
 
 public class MergeSort {
     
+    // Time Complexity: O(n log n)
     public static void sort(int[] arr) {
         if (arr == null || arr.length == 0) {
             return;
