@@ -9,6 +9,7 @@ public class MergeSort {
         mergeSort(arr, 0, arr.length - 1);
     }
     
+    // Auxiliary method that sorts the array using merge sort algorithm
     private static void mergeSort(int[] arr, int left, int right) {
         if (left < right) {
             int mid = left + (right - left) / 2;
@@ -21,6 +22,7 @@ public class MergeSort {
         }
     }
     
+    // Helper method to merge two sorted subarrays
     private static void merge(int[] arr, int left, int mid, int right) {
         int leftSize = mid - left + 1;
         int rightSize = right - mid;
